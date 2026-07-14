@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>For Someone Special ❤️</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="bgMusic" loop>
+  <source src="music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="voiceNote">
+  <source src="music/voice.mp3" type="audio/mpeg">
+</audio>
+<button id="musicToggle" class="music-toggle">
+  🎵
+</button>
+
+  <!-- Background effects -->
+  <div id="particles"></div>
+
+  <!-- =========================
+       SCREEN 1: OPENING
+  ========================== -->
+  <section id="openingScreen" class="screen active">
+
+    <div class="opening-content">
+
+      <div class="gift-icon">🎁</div>
+
+      <p class="small-text">
+        Something special is waiting for you...
+      </p>
+
+      <h1>For You ❤️</h1>
+
+      <button id="beginBtn" class="main-btn">
+  Tap to Begin ✨
+</button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SCREEN 2: CINEMATIC INTRO
+  ========================== -->
+  <section id="introScreen" class="screen">
+
+    <div class="content">
+
+      <p id="introText"></p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SCREEN 3: BIRTHDAY REVEAL
+  ========================== -->
+  <section id="birthdayScreen" class="screen">
+
+    <div class="birthday-content">
+
+      <p class="date-text">
+        28 JULY
+      </p>
+
+      <h1 class="birthday-title">
+        HAPPY BIRTHDAY
+      </h1>
+
+      <h2 class="name">
+        PRIYA ❤️
+      </h2>
+
+      <p class="birthday-subtitle">
+        Today is all about you ✨
+      </p>
+
+      <button id="continueBtn" class="main-btn">
+        There's More 💖
+      </button>
+
+    </div>
+
+  </section>
+
+<!-- =========================
+     SCREEN 4: MEMORIES
+========================= -->
+<section id="memoriesScreen" class="screen">
+
+  <div class="memories-content">
+
+    <p class="memory-small-title">
+      A few little moments... 📸
+    </p>
+
+    <h1 class="memory-title">
+      Some Beautiful Memories ❤️
+    </h1>
+
+    <div class="photo-container">
+
+      <div class="photo-card active-photo">
+        <img src="images/img1.jpg" alt="Memory 1">
+        <p>Some pictures are more than just pictures... ✨</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/img2.jpg" alt="Memory 2">
+        <p>Some moments just deserve to be remembered ❤️</p>
+      </div>
+
+      <div class="photo-card">
+        <img src="images/img3.jpg" alt="Memory 3">
+        <p>And some people make ordinary moments special 🌸</p>
+      </div>
+
+    </div>
+
+    <div class="photo-controls">
+      <button id="nextPhotoBtn" class="main-btn">
+        Next Memory 💖
+      </button>
+    </div>
+
+    <button id="afterMemoriesBtn" class="main-btn memories-next-btn">
+      Continue ✨
+    </button>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     SCREEN 5: THINGS I LIKE
+========================= -->
+
+<section id="thingsScreen" class="screen">
+
+  <div class="things-content">
+
+    <p class="things-small-title">
+      Okay... one more thing 🙂
+    </p>
+
+    <h1 class="things-title">
+      A Few Things I Like About You ❤️
+    </h1>
+
+    <p class="things-subtitle">
+      Tap each one ✨
+    </p>
+
+
+    <div class="things-list">
+
+      <button class="thing-card">
+        <span class="thing-front">😊 Your Smile</span>
+        <span class="thing-message">
+          Because somehow, it can make an ordinary moment feel better ❤️
+        </span>
+      </button>
+
+
+      <button class="thing-card">
+        <span class="thing-front">💬 The Way You Talk</span>
+        <span class="thing-message">
+          Because I can literally talk to you for hours and still not get bored 🙂
+        </span>
+      </button>
+
+
+      <button class="thing-card">
+        <span class="thing-front">🤍 Your Trust</span>
+        <span class="thing-message">
+          The way you share things with me means more to me than you probably realise.
+        </span>
+      </button>
+
+
+      <button class="thing-card">
+        <span class="thing-front">🌸 The Person You Are</span>
+        <span class="thing-message">
+          Your thoughts, your nature, your little habits... somehow they all make you, you ❤️
+        </span>
+      </button>
+
+
+      <button class="thing-card">
+        <span class="thing-front">✨ The Way You Motivate Me</span>
+        <span class="thing-message">
+          Without even trying, you became one of the reasons I started taking my future more seriously 💖
+        </span>
+      </button>
+
+    </div>
+
+
+    <button
+      id="afterThingsBtn"
+      class="main-btn things-next-btn"
+    >
+      One More Surprise 🎁
+    </button>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     SCREEN 6: VIRTUAL GIFT
+========================= -->
+
+<section id="giftScreen" class="screen">
+
+  <div class="gift-content">
+
+    <p class="gift-small-text">
+      I have something for you... 🎁
+    </p>
+
+    <h1 class="gift-title">
+      A Little Birthday Gift ❤️
+    </h1>
+
+    <p id="giftInstruction" class="gift-instruction">
+      Tap the gift to open it ✨
+    </p>
+
+
+    <!-- GIFT BOX -->
+    <div id="giftBox" class="gift-box">
+
+      <div class="gift-lid">
+        <div class="gift-bow">🎀</div>
+      </div>
+
+      <div class="gift-body">
+        <div class="gift-ribbon"></div>
+        <span class="gift-heart">❤️</span>
+      </div>
+
+    </div>
+
+
+    <!-- LETTER -->
+    <div id="birthdayLetter" class="birthday-letter">
+
+      <div class="letter-paper">
+
+        <p class="letter-heading">
+          Dear Laxmii ❤️
+        </p>
+
+        <p>
+          On your special day, I just want to say that I am genuinely
+          grateful that life gave me the chance to know you.
+        </p>
+
+        <p>
+          From being classmates years ago to talking for hours about
+          almost everything, somehow you became a very special part
+          of my life.
+        </p>
+
+        <p>
+          I hope this new year of your life brings you happiness,
+          success, peace, and everything your heart truly wishes for.
+        </p>
+
+        <p>
+          Keep smiling, keep being exactly the person you are,
+          and never forget how special you are. ❤️
+        </p>
+
+        <p class="letter-ending">
+          Happy Birthday once again, My LOVE 🎂💖
+        </p>
+
+        <p class="letter-signature">
+          — Ayush ❤️
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <button
+      id="afterGiftBtn"
+      class="main-btn gift-next-btn"
+    >
+      One Last Thing ✨
+    </button>
+
+  </div>
+
+</section>
+<!-- =========================
+     SCREEN 7: MAKE A WISH
+========================= -->
+
+<section id="wishScreen" class="screen">
+
+  <div class="wish-content">
+
+    <!-- BEFORE CANDLE IS BLOWN -->
+
+    <div id="wishBefore">
+
+      <p class="wish-small-text">
+        Before this little surprise ends... ✨
+      </p>
+
+      <h1 class="wish-title">
+        Make a Wish, LIPI ❤️
+      </h1>
+
+      <p class="wish-subtitle">
+        Close your eyes, make a beautiful wish...
+      </p>
+
+
+      <!-- CAKE -->
+
+      <div class="cake">
+
+        <div class="candle">
+
+          <div id="flame" class="flame"></div>
+
+        </div>
+
+        <div class="cake-top"></div>
+
+        <div class="cake-layer cake-layer-one"></div>
+
+        <div class="cake-layer cake-layer-two"></div>
+
+        <div class="cake-layer cake-layer-three"></div>
+
+      </div>
+
+
+      <button
+        id="blowCandleBtn"
+        class="main-btn blow-btn"
+      >
+        Blow the Candle 🕯️
+      </button>
+
+    </div>
+
+
+    <!-- FINAL MESSAGE -->
+
+    <div id="finalBirthdayMessage" class="final-birthday-message">
+
+      <div class="final-heart">
+        ❤️
+      </div>
+
+      <p class="final-small-text">
+        And with that...
+      </p>
+
+      <h1>
+        Happy Birthday,
+      </h1>
+
+      <h2>My Love 🩵</h2>
+
+      <p class="final-wish-text">
+        May all your wishes come true and may this year
+        bring you all the happiness you truly deserve. ✨
+      </p>
+
+      <p class="final-ending">
+        Keep smiling... always. ❤️
+      </p>
+
+      <p class="final-signature">
+        — Ayush
+      </p>
+<button
+  id="lastSurpriseBtn"
+  class="main-btn last-surprise-btn"
+>
+  One Last Surprise 💌
+</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     SCREEN 8: ONE LAST SURPRISE
+========================= -->
+
+<section id="lastSurpriseScreen" class="screen">
+
+  <div class="last-surprise-content">
+
+    <p class="last-small-text">
+      Just one last thing... 💌
+    </p>
+
+    <div class="last-envelope">
+      💌
+    </div>
+
+    <h1 class="last-title">
+      Before You Go...
+    </h1>
+
+    <div class="last-message-box">
+      <p id="lastMessage"></p>
+    </div>
+
+    <p
+      id="lastSignature"
+      class="last-signature"
+    >
+      — Always rooting for you, Ayush ❤️
+    </p>
+    <button
+  id="finalEndingBtn"
+  class="main-btn final-ending-btn"
+>
+  Finish This Story ✨
+</button>
+
+  </div>
+
+</section>
+<!-- =========================
+     SCREEN 9: FINAL CINEMATIC ENDING
+========================= -->
+
+
+<!-- =========================
+     CATCH THE HEARTS GAME
+========================= -->
+
+<section id="heartGameScreen" class="screen">
+
+  <div class="heart-game-content">
+
+    <p class="game-small-text">
+      Wait... one tiny challenge 😌
+    </p>
+
+    <h1 class="game-title">
+      Catch My Hearts ❤️
+    </h1>
+
+    <p class="game-subtitle">
+      Catch 5 hearts to unlock a secret message ✨
+    </p>
+
+    <div class="heart-counter">
+      <span id="heartCount">0</span> / 5 ❤️
+    </div>
+
+    <div id="heartGameArea" class="heart-game-area">
+
+      <div id="catchHeart" class="catch-heart">
+        ❤️
+      </div>
+
+    </div>
+
+    <div
+      id="heartGameSecret"
+      class="heart-game-secret"
+    >
+
+      <div class="secret-heart">
+        💖
+      </div>
+
+      <p>
+        You caught all the hearts...
+        <br>
+        but somehow,
+        <strong>you already had mine. ❤️</strong>
+      </p>
+
+      <button
+        id="afterHeartGameBtn"
+        class="main-btn"
+      >
+        One More Surprise ✨
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- =========================
+     SCRATCH TO REVEAL
+========================= -->
+
+<section id="scratchScreen" class="screen">
+
+  <div class="scratch-content">
+
+    <p class="scratch-small-text">
+      You unlocked something special... ✨
+    </p>
+
+    <h1 class="scratch-title">
+      Your Birthday Fortune 🎟️
+    </h1>
+
+    <p class="scratch-subtitle">
+      Scratch the card to reveal your surprise ❤️
+    </p>
+
+
+    <!-- SCRATCH CARD -->
+    <div id="scratchCard" class="scratch-card">
+
+      <!-- Hidden message below -->
+      <div class="scratch-message">
+
+        <div class="fortune-icon">
+          🔮
+        </div>
+
+        <p class="fortune-label">
+          YOUR BIRTHDAY FORTUNE
+        </p>
+
+        <h2>
+          This year brings...
+        </h2>
+
+        <p class="fortune-text">
+          More happiness ✨
+          <br>
+          More success 🌟
+          <br>
+          More beautiful memories ❤️
+          <br><br>
+          And unfortunately...
+          <br>
+          <strong>
+            more of Ayush irritating you 😌😂❤️
+          </strong>
+        </p>
+
+      </div>
+
+
+      <!-- Scratch layer -->
+      <canvas
+        id="scratchCanvas"
+        width="500"
+        height="320"
+      ></canvas>
+
+    </div>
+
+
+    <p
+      id="scratchProgressText"
+      class="scratch-progress-text"
+    >
+      Keep scratching... ✨
+    </p>
+
+
+    <div
+      id="scratchComplete"
+      class="scratch-complete"
+    >
+
+      <p>
+        Looks like your future is going to be interesting 😌❤️
+      </p>
+
+      <button
+  id="voiceNoteBtn"
+  class="main-btn voice-note-btn"
+>
+  🎧 Hear Something From Me
+</button>
+
+<p
+  id="voiceStatus"
+  class="voice-status"
+>
+  A little message in my own voice ❤️
+</p>
+      <button
+        id="afterScratchBtn"
+        class="main-btn"
+      >
+        Now Finish This Story ✨
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+<section id="endingScreen" class="screen">
+
+  <div class="ending-content">
+
+    <div class="ending-stars">
+      ✦ ✨ ✦
+    </div>
+
+    <p class="ending-small-text">
+      And finally...
+    </p>
+
+    <div class="ending-line"></div>
+
+    <p class="ending-quote">
+      Some birthdays are special because of the date...
+      <br><br>
+      but yours is special because
+      <span>you exist. ❤️</span>
+    </p>
+
+    <div class="ending-heart">
+      ❤️
+    </div>
+
+    <h1>
+      Happy Birthday
+    </h1>
+
+    <h2>
+      My Cutiee Lipi ✨💖
+    </h2>
+
+    <p class="ending-from">
+      Made with ❤️ by Ayush
+    </p>
+
+    <button
+      id="replayBtn"
+      class="main-btn replay-btn"
+    >
+      Replay the Surprise ↻
+    </button>
+
+  </div>
+
+</section>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
